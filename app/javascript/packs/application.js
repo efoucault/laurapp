@@ -1,8 +1,14 @@
 import "bootstrap";
 
-let circle = document.querySelector(".circle");
+const circle = document.querySelector(".circle");
 circle.addEventListener("click", (event) => {
-  let audio = document.querySelector(".test");
-  audio.currentTime = 0;
-  audio.play();
+  const songs = document.querySelectorAll(".test");
+  const gifs = document.querySelectorAll(".animated-gif");
+  gifs.forEach((gif) => {
+    gif.classList.add("hidden");
+  });
+  gifs[Math.floor(Math.random()*gifs.length)].classList.remove("hidden");
+  var song = songs[Math.floor(Math.random()*songs.length)];
+  song.currentTime = 0;
+  song.play();
 });

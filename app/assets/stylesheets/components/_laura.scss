@@ -1,11 +1,63 @@
+body {
+  background-color: black;
+}
+
+.flexbox-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.animated-gif {
+  margin-top: 1em;
+  width: 60%;
+  height: auto;
+  border-radius: 0.1em;
+}
+
 .circle {
-  height: 100vh;
-  width: 100vw;
+  margin-top: 0.5em;
+  padding-top: 0.8em;
+  width: 60%;
+  height: 3em;
   background-color: red;
   color: white;
-  font-weight: 800;
-  font-size: 8em;
+  border-radius: 0.1em;
   text-align: center;
-  padding-top: 50vh;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 640px) {
+  .flexbox-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animated-gif {
+    width: 100%;
+    height: auto;
+    border-radius: 0.1em;
+  }
+
+  .circle {
+    margin-top: 0.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding-top: 0.8em;
+    width: 80%;
+    height: 3em;
+    background-color: red;
+    color: white;
+    border-radius: 0.1em;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 800;
+  }
 }
 
