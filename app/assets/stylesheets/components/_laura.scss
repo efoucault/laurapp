@@ -1,5 +1,7 @@
 body {
   background-color: black;
+  width: 100vw;
+  height: 100vh;
 }
 
 .flexbox-content {
@@ -45,6 +47,12 @@ body {
 
 
 @media screen and (max-width: 640px) {
+    body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .flexbox-content {
     display: flex;
     flex-direction: column;
@@ -76,7 +84,12 @@ body {
   .postit {
     margin-top: 10vh;
     color: white;
-    margin-left: 0.2em;
+    // margin-left: 0.2em;
+    font-size: 2em;
+  }
+
+  .gif {
+    width: 100%;
   }
 }
 
