@@ -12,14 +12,14 @@ body {
 }
 
 .animated-gif {
-  margin-top: 1em;
-  width: 60%;
+  margin-top: 10vh;
+  width: 35%;
   height: auto;
   border-radius: 0.1em;
 }
 
 .circle {
-  margin-top: 0.5em;
+  margin-top: 40vh;
   padding-top: 0.8em;
   width: 60%;
   height: 3em;
@@ -31,6 +31,19 @@ body {
   font-weight: 800;
 }
 
+.postit {
+  margin-top: 10vh;
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+
+.gif {
+  margin-top: 5vh;
+  size: 60%;
+}
+
+
 @media screen and (max-width: 640px) {
   .flexbox-content {
     display: flex;
@@ -40,24 +53,30 @@ body {
   }
 
   .animated-gif {
+    margin-top: 30vh;
     width: 100%;
     height: auto;
     border-radius: 0.1em;
   }
 
   .circle {
-    margin-top: 0.5em;
+    margin-top: 40vh;
     margin-left: 0.2em;
     margin-right: 0.2em;
     padding-top: 0.8em;
     width: 80%;
-    height: 3em;
+    height: 5em;
     background-color: red;
     color: white;
     border-radius: 0.1em;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 3em;
     font-weight: 800;
+  }
+  .postit {
+    margin-top: 10vh;
+    color: white;
+    margin-left: 0.2em;
   }
 }
 
