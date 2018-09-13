@@ -1,16 +1,23 @@
 <div class="flexbox-content">
-    <%= image_tag "giphy21.gif", class: "animated-gif hidden" %>
-    <%= image_tag "giphy.gif", class: "animated-gif hidden" %>
-    <%= image_tag "giphy1.gif", class: "animated-gif hidden" %>
-    <%= image_tag "giphy2.gif", class: "animated-gif hidden" %>
+    <%= image_tag "laura.png", class: "animated-gif hidden" %>
+    <%= image_tag "giphy1.gif", class: "gif hidden" %>
+    <%= image_tag "giphy2.gif", class: "gif hidden" %>
+    <%= image_tag "giphy21.gif", class: "gif hidden" %>
+    <%= image_tag "giphy.gif", class: "gif hidden" %>
+    <h1 class="postit hidden", data-id=1>10c si tu dis merci d'ici ce soir !</h1>
+    <h1 class="postit hidden", data-id=2>Engueule quelqu'un gratos !</h1>
+    <h1 class="postit hidden", data-id=3>File ta place, vas ailleurs !</h1>
+    <h1 class="postit hidden", data-id=4>Ils chantent pour toi !</h1>
+    <h1 class="postit hidden", data-id=5>Demande à ton voisin de faire quelque chose pour toi !</h1>
+    <h1 class="postit hidden", data-id=6>Fais un voeu !</h1>
   <div class="circle">
     <div class="text">Bizuter Laura !</div>
   </div>
 </div>
-<%= audio_tag "JOTI.mp3", class: "test" %>
-<%= audio_tag "PP.mp3", class: "test" %>
-<%= audio_tag "PQTME.mp3", class: "test" %>
-<%= audio_tag "RM.mp3", class: "test" %>
-<%= audio_tag "SLV.mp3", class: "test" %>
-<%= audio_tag "EUS.mp3", class: "test" %>
+<%= audio_tag "PQTME.mp3", class: "test", :data => { :id => 1 } %>
+<%= audio_tag "SLV.mp3", class: "test", :data => { :id => 2 } %>
+<%= audio_tag "EUS.mp3", class: "test", :data => { :id => 3 } %>
+<%= audio_tag "JOTI.mp3", class: "test", :data => { :id => 4 } %>
+<%= audio_tag "RM.mp3", class: "test", :data => { :id => 5 } %>
+<%= audio_tag "PP.mp3", class: "test", :data => { :id => 6 } %>
 
