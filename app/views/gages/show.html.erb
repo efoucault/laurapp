@@ -1,0 +1,8 @@
+<div class="flexbox-content">
+  <%= image_tag "laura.png", class: "animated-gif hidden" %>
+  <%= cl_image_tag("#{@gage.photo}", class: "hidden")%>
+  <h1 class="postit hidden"><%= @gage.name %></h1>
+  <% cl_image_tag("#{@gage.audio}")%>
+  <%= audio_tag "roulette.mp3", class: "roulette" %>
+
+</div>
