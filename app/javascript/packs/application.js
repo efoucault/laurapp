@@ -36,7 +36,9 @@ else if (controller === "gages") {
   const laura = document.querySelector(".animated-gif");
   const circle = document.querySelector(".circle");
   const roulette = document.querySelector(".roulette");
-  const gifs = document.querySelectorAll(".gif");
+  const gif = document.querySelector(".gif");
+  const text = document.querySelector(".postit");
+  const song = document.querySelector(".song");
   document.addEventListener("DOMContentLoaded", function(event) {
   laura.classList.remove("hidden");
   roulette.play();
@@ -48,12 +50,8 @@ else if (controller === "gages") {
       laura.classList.add("hidden");
       gif.classList.remove("hidden");
       text.classList.remove("hidden");
-      const song = document.querySelector(`audio[data-id="${id}"]`);
       song.currentTime = 0;
       song.play();
-      song.onended = function() {
-        location.reload();
-      };
     }, 3000);
   });
 }
