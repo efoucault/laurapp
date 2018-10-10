@@ -1,6 +1,6 @@
 class GagesController < ApplicationController
   def index
-    @gage = Gage.all
+    @gages = Gage.all
   end
 
   def show

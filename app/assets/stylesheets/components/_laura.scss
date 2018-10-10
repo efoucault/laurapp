@@ -4,6 +4,11 @@ body {
   height: 100vh;
 }
 
+p {
+  padding-top: 6px;
+  color: white;
+}
+
 .flexbox-content {
   display: flex;
   flex-direction: column;
@@ -45,6 +50,27 @@ body {
   size: 60%;
 }
 
+.index-content {
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+}
+
+.offscreen {
+  position: absolute;
+  left: -999em;
+}
+
+#copy {
+  margin-left: 5px;
+  margin-bottom: 12.5px;
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  background-color: #0971B2;
+  color: white;
+  border: none;
+}
 
 @media screen and (max-width: 640px) {
     body {
