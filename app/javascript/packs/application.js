@@ -59,5 +59,11 @@ else {
   console.log("autre");
 }
 
+function copy() {
+  var copyText = document.querySelector("#input");
+  console.log(copyText);
+  copyText.select();
+  document.execCommand("copy");
+}
 
-
+document.querySelector("#copy").addEventListener("click", copy);
