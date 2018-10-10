@@ -59,11 +59,19 @@ else {
   console.log("autre");
 }
 
-function copy() {
-  var copyText = document.querySelector("#input");
-  console.log(copyText);
-  copyText.select();
-  document.execCommand("copy");
-}
+const boutons = document.querySelectorAll("#copy");
+boutons.forEach((bouton) => {
+  bouton.addEventListener("click", (event) => {
+    const index = event.currentTarget.dataset.gageid;
+    const url = document.querySelector(`#input${index}`);
+    console.log(url)
+    url.select();
+    document.execCommand("copy");
+  });
+});
 
-document.querySelector("#copy").addEventListener("click", copy);
+ // icon.addEventListener("click", (event) => {
+ //    const index = event.currentTarget.dataset.trash;
+ //    console.log(document.getElementById(`question_options_attributes_${index}_photo`));
+ //    document.getElementById(`question_options_attributes_${index}__destroy`).click();
+ //  });
