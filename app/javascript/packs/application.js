@@ -58,7 +58,7 @@ else if (controller === "gages") {
         song.currentTime = 0;
         song.play();
         song.onended = function() {
-          window.location = "http://localhost:3000";
+          window.location = "https://laura-app-twelve.herokuapp.com";
         };
       }, 3000);
   });
