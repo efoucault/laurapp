@@ -1,8 +1,12 @@
 <% Gage.all.each do |gage| %>
   <div class="index-content">
-    <p><%= gage.name %></p>
-    <input class="offscreen" id="input<%= gage.id %>" value="http://localhost:3000/gages/<%= gage.id %>" aria-hidden="true">
-    <button id="copy" data-gageid="<%= gage.id %>"><i class="fas fa-copy" ></i></button>
+    <div class="titre">
+      <p><%= gage.name %></p>
+    </div>
+    <div class="link">
+      <input class="offscreen" id="input<%= gage.id %>" value="http://localhost:3000/gages/<%= gage.id %>" aria-hidden="true">
+      <button id="copy" data-gageid="<%= gage.id %>"><i class="fas fa-copy" ></i></button>
+    </div>
   </div>
 <% end %>
 
