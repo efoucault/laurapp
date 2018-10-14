@@ -68,7 +68,6 @@ boutons.forEach((bouton) => {
   bouton.addEventListener("click", (event) => {
     const index = event.currentTarget.dataset.gageid;
     const url = document.querySelector(`#input${index}`);
-    console.log(url)
     url.select();
     document.execCommand("copy");
     alert("Lien copié !");
