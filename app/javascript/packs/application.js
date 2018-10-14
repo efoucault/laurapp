@@ -7,10 +7,14 @@ if (controller === "pages") {
   const circle = document.querySelector(".circle");
   const roulette = document.querySelector(".roulette");
   const gifs = document.querySelectorAll(".gif");
+  const links = document.querySelectorAll(".index-content");
 
   circle.addEventListener("click", (event) => {
     laura.classList.remove("hidden");
     circle.classList.add("hidden");
+    links.forEach((link) => {
+      link.classList.add("hidden");
+    });
     roulette.play();
     var angle=0;
     setInterval(function(){
