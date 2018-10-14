@@ -67,6 +67,7 @@ boutons.forEach((bouton) => {
     console.log(url)
     url.select();
     document.execCommand("copy");
+    alert("Lien copié !");
   });
 });
 
