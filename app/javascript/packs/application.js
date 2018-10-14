@@ -43,20 +43,24 @@ else if (controller === "gages") {
   const gif = document.querySelector(".gif");
   const text = document.querySelector(".postit");
   const song = document.querySelector(".song");
-  document.addEventListener("DOMContentLoaded", function(event) {
-  laura.classList.remove("hidden");
-  roulette.play();
-  var angle=0;
-    setInterval(function(){
-      laura.style.transform="rotateZ("+ angle++ +"deg)";
-    }, 10);
-    setTimeout(function () {
-      laura.classList.add("hidden");
-      gif.classList.remove("hidden");
-      text.classList.remove("hidden");
-      song.currentTime = 0;
-      song.play();
-    }, 3000);
+  circle.addEventListener("click", function(event) {
+    laura.classList.remove("hidden");
+    circle.classList.add("hidden");
+    roulette.play();
+    var angle=0;
+      setInterval(function(){
+        laura.style.transform="rotateZ("+ angle++ +"deg)";
+      }, 10);
+      setTimeout(function () {
+        laura.classList.add("hidden");
+        gif.classList.remove("hidden");
+        text.classList.remove("hidden");
+        song.currentTime = 0;
+        song.play();
+        song.onended = function() {
+          window.location = "http://localhost:3000";
+        };
+      }, 3000);
   });
 }
 else {
