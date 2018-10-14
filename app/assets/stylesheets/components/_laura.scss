@@ -50,10 +50,14 @@ p {
   size: 60%;
 }
 
+.index {
+  width: 60%;
+}
 .index-content {
   display: flex;
   vertical-align: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 1em;
 }
 
 .offscreen {
@@ -70,6 +74,11 @@ p {
   background-color: #0971B2;
   color: white;
   border: none;
+}
+
+.titre {
+  width: 80%;
+  padding-left: 0em;
 }
 
 @media screen and (max-width: 640px) {
@@ -94,11 +103,11 @@ p {
   }
 
   .circle {
-    margin-top: 40vh;
+    margin-top: 10vh;
     margin-left: 0.2em;
     margin-right: 0.2em;
     padding-top: 0.8em;
-    width: 80%;
+    width: 90%;
     height: 5em;
     background-color: red;
     color: white;
@@ -116,6 +125,14 @@ p {
 
   .gif {
     width: 100%;
+  }
+
+  .index {
+    width: 90%;
+  }
+
+  .titre {
+    width: 90%;
   }
 }
 
