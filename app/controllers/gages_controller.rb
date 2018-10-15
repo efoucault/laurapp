@@ -1,6 +1,10 @@
 class GagesController < ApplicationController
   def index
+    if params['query'].present?
+      @gages = Gage.search_by_name(params['query'])
+    else
     @gages = Gage.all
+    end
   end
 
   def show
