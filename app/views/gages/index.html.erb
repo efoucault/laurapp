@@ -1,3 +1,43 @@
-<% @gages.each do |gage| %>
-  <p><%= gage.name %></p>
-<% end %>
+<div class="flexbox-content">
+    <%= image_tag "laura.png", class: "animated-gif hidden" %>
+    <%= image_tag "giphy1.gif", class: "gif hidden" %>
+    <%= image_tag "giphy2.gif", class: "gif hidden" %>
+    <%= image_tag "giphy21.gif", class: "gif hidden" %>
+    <%= image_tag "giphy.gif", class: "gif hidden" %>
+    <h1 class="postit hidden", data-id=1>1€ à chaque merci d'ici ce soir !</h1>
+    <h1 class="postit hidden", data-id=2>Engueule quelqu'un gratos !</h1>
+    <h1 class="postit hidden", data-id=3>File ta place, vas ailleurs !</h1>
+    <h1 class="postit hidden", data-id=4>Ils chantent pour toi !</h1>
+    <h1 class="postit hidden", data-id=5>Demande à ton voisin de faire quelque chose pour toi !</h1>
+    <h1 class="postit hidden", data-id=6>Fais un voeu !</h1>
+  <div class="circle">
+    <div class="text">Bizuter Laura !</div>
+  </div>
+  <div class="index">
+    <br>
+    <div class="searchzone">
+      <form action="/gages" method="get" class="">
+        <input type="text" name="query" placeholder="Recherche un gage" class="">
+        <input type="submit" class= "btn" value="Ok">
+      </form>
+    </div>
+    <% @gages.each do |gage| %>
+      <div class="index-content">
+        <div class="titre">
+          <p><%= gage.name %></p>
+        </div>
+        <div class="link">
+          <input class="offscreen" id="input<%= gage.id %>" value="https://laura-app-twelve.herokuapp.com/gages/<%= gage.id %>" aria-hidden="true">
+          <button id="copy" data-gageid="<%= gage.id %>"><i class="fas fa-copy" ></i></button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= audio_tag "PQTME.mp3", class: "test", :data => { :id => 1 } %>
+<%= audio_tag "SLV.mp3", class: "test", :data => { :id => 2 } %>
+<%= audio_tag "EUS.mp3", class: "test", :data => { :id => 3 } %>
+<%= audio_tag "JOTI.mp3", class: "test", :data => { :id => 4 } %>
+<%= audio_tag "RM.mp3", class: "test", :data => { :id => 5 } %>
+<%= audio_tag "PP.mp3", class: "test", :data => { :id => 6 } %>
+<%= audio_tag "roulette.mp3", class: "roulette" %>

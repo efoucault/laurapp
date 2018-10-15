@@ -1,17 +1,21 @@
 import "bootstrap";
 const metas = document.getElementsByTagName('meta');
 const controller = metas[5].attributes.controller.value
-if (controller === "pages") {
+const action = metas[5].attributes.action.value
+if ((controller === "pages") || (controller === "gages" && action === "index")) {
+  console.log("accueil");
   const ids = [1, 2, 3, 4, 5, 6]
   const laura = document.querySelector(".animated-gif");
   const circle = document.querySelector(".circle");
   const roulette = document.querySelector(".roulette");
   const gifs = document.querySelectorAll(".gif");
   const links = document.querySelectorAll(".index-content");
+  const searchBar = document.querySelector(".searchzone");
 
   circle.addEventListener("click", (event) => {
     laura.classList.remove("hidden");
     circle.classList.add("hidden");
+    searchBar.classList.add("hidden");
     links.forEach((link) => {
       link.classList.add("hidden");
     });
@@ -36,7 +40,7 @@ if (controller === "pages") {
     }, 3000);
   });
 }
-else if (controller === "gages") {
+else if (controller === "gages" && action === "show") {
   const laura = document.querySelector(".animated-gif");
   const circle = document.querySelector(".circle");
   const roulette = document.querySelector(".roulette");
