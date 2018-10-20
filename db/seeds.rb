@@ -39,4 +39,34 @@ voeu.photo = Rails.root.join("app/assets/images/giphy1.gif").open
 voeu.audio = Rails.root.join("app/assets/images/PP.mp3").open
 voeu.save
 
+bent = Gage.new(name: "Garde 5 min le poing levé !")
+bent.photo = Rails.root.join("app/assets/images/bentgif.gif").open
+bent.audio = Rails.root.join("app/assets/images/bent.mp3").open
+bent.save
+
+sardou = Gage.new(name: "Chante ce que tu es en train de faire !")
+sardou.photo = Rails.root.join("app/assets/images/sardougif.gif").open
+sardou.audio = Rails.root.join("app/assets/images/sardou.mp3").open
+sardou.save
+
+thriller = Gage.new(name: "Fais la choré !")
+thriller.photo = Rails.root.join("app/assets/images/thrillergif.gif").open
+thriller.audio = Rails.root.join("app/assets/images/thriller.mp3").open
+thriller.save
+
+johnny = Gage.new(name: "Plus le droit de parler pendant 10 min !")
+johnny.photo = Rails.root.join("app/assets/images/johnnygif.gif").open
+johnny.audio = Rails.root.join("app/assets/images/johnny.mp3").open
+johnny.save
+
+rois = Gage.new(name: "Imite le chien puis le loup !")
+rois.photo = Rails.root.join("app/assets/images/roisgif.gif").open
+rois.audio = Rails.root.join("app/assets/images/rois.mp3").open
+rois.save
+
+piano = Gage.new(name: "Reste debout 10 minutes !")
+piano.photo = Rails.root.join("app/assets/images/pianogif.gif").open
+piano.audio = Rails.root.join("app/assets/images/piano.mp3").open
+piano.save
+
 puts "traitement fini"
