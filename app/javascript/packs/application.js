@@ -4,7 +4,7 @@ const controller = metas[5].attributes.controller.value
 const action = metas[5].attributes.action.value
 if ((controller === "pages") || (controller === "gages" && action === "index")) {
   console.log("accueil");
-  const ids = [1, 2, 3, 4, 5, 6]
+  const ids = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   const laura = document.querySelector(".animated-gif");
   const circle = document.querySelector(".circle");
   const roulette = document.querySelector(".roulette");
@@ -28,7 +28,7 @@ if ((controller === "pages") || (controller === "gages" && action === "index")) 
       laura.classList.add("hidden");
       const id = ids[Math.floor(Math.random()*ids.length)];
       const text = document.querySelector(`h1[data-id="${id}"]`);
-      const gif = gifs[Math.floor(Math.random()*gifs.length)];
+      const gif = document.querySelector(`img[data-id="${id}"]`);
       gif.classList.remove("hidden");
       text.classList.remove("hidden");
       const song = document.querySelector(`audio[data-id="${id}"]`);

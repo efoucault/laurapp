@@ -1,15 +1,29 @@
 <div class="flexbox-content">
     <%= image_tag "laura.png", class: "animated-gif hidden" %>
-    <%= image_tag "giphy1.gif", class: "gif hidden" %>
-    <%= image_tag "giphy2.gif", class: "gif hidden" %>
-    <%= image_tag "giphy21.gif", class: "gif hidden" %>
-    <%= image_tag "giphy.gif", class: "gif hidden" %>
+    <%= image_tag "giphy1.gif", class: "gif hidden", :data => { :id => 1 } %>
+    <%= image_tag "giphy2.gif", class: "gif hidden", :data => { :id => 2 } %>
+    <%= image_tag "giphy2.gif", class: "gif hidden", :data => { :id => 3 } %>
+    <%= image_tag "giphy2.gif", class: "gif hidden", :data => { :id => 4 } %>
+    <%= image_tag "giphy21.gif", class: "gif hidden", :data => { :id => 5 } %>
+    <%= image_tag "giphy.gif", class: "gif hidden", :data => { :id => 6 } %>
+    <%= image_tag "bentgif.gif", class: "gif hidden", :data => { :id => 7 } %>
+    <%= image_tag "sardougif.gif", class: "gif hidden", :data => { :id => 8 } %>
+    <%= image_tag "thrillergif.gif", class: "gif hidden", :data => { :id => 9 } %>
+    <%= image_tag "johnnygif.gif", class: "gif hidden", :data => { :id => 10 } %>
+    <%= image_tag "roisgif.gif", class: "gif hidden", :data => { :id => 11 }%>
+    <%= image_tag "pianogif.gif", class: "gif hidden", :data => { :id => 12 } %>
     <h1 class="postit hidden", data-id=1>1€ à chaque merci d'ici ce soir !</h1>
     <h1 class="postit hidden", data-id=2>Engueule quelqu'un gratos !</h1>
     <h1 class="postit hidden", data-id=3>File ta place, vas ailleurs !</h1>
     <h1 class="postit hidden", data-id=4>Ils chantent pour toi !</h1>
     <h1 class="postit hidden", data-id=5>Demande à ton voisin de faire quelque chose pour toi !</h1>
     <h1 class="postit hidden", data-id=6>Fais un voeu !</h1>
+    <h1 class="postit hidden", data-id=7>Garde 5 min le poing levé !</h1>
+    <h1 class="postit hidden", data-id=8>Chante ce que tu es en train de faire !</h1>
+    <h1 class="postit hidden", data-id=9>Fais la choré !</h1>
+    <h1 class="postit hidden", data-id=10>Plus le droit de parler pendant 10 min !</h1>
+    <h1 class="postit hidden", data-id=11>Imite le chien puis le loup !</h1>
+    <h1 class="postit hidden", data-id=12>Reste debout 10 minutes !</h1>
   <div class="circle">
     <div class="text">Bizuter Laura !</div>
   </div>
@@ -23,5 +37,11 @@
 <%= audio_tag "JOTI.mp3", class: "test", :data => { :id => 4 } %>
 <%= audio_tag "RM.mp3", class: "test", :data => { :id => 5 } %>
 <%= audio_tag "PP.mp3", class: "test", :data => { :id => 6 } %>
+<%= audio_tag "bent.mp3", class: "test", :data => { :id => 7 } %>
+<%= audio_tag "sardou.mp3", class: "test", :data => { :id => 8 } %>
+<%= audio_tag "thriller.mp3", class: "test", :data => { :id => 9 } %>
+<%= audio_tag "johnny.mp3", class: "test", :data => { :id => 10 } %>
+<%= audio_tag "rois.mp3", class: "test", :data => { :id => 11 } %>
+<%= audio_tag "piano.mp3", class: "test", :data => { :id => 12 } %>
 <%= audio_tag "roulette.mp3", class: "roulette" %>
 
